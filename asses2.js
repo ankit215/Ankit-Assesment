@@ -16,7 +16,10 @@ class Dog extends Animal {
         super.speak();
         console.log(this.name + 'barks');
     }
+    getBreed(){
+        return this.breed;
+    }
 }
 let dog = new Dog('Bolt', 'White German Shepherd')
-dog.speak(); 
+console.log(dog.getBreed()); 
 
